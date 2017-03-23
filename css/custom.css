@@ -1,0 +1,391 @@
+.leftalign {
+  text-align: left;
+}
+
+.rightalign {
+  text-align: right;
+  float: right;
+}
+
+@media (min-width: 992px) {
+  .index-bottom-cta {
+    display: flex;
+  }
+}
+
+.in-nav {
+  width: inherit;
+}
+
+div.question {
+  margin-bottom: 40px;
+}
+
+ul.faq {
+  padding-left: 20px;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+@media (max-width: 770px) {
+  footer div.row div {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  footer div.row div span, footer div.row div ul {
+    font-size: 14px;
+  }
+}
+
+h1.corevalue {
+  margin-bottom: 8px;
+}
+
+.manual-message {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.pricing-tables .no-pad {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.pricing-tables .no-pad-left {
+  padding-left: 0px !important;
+}
+
+.pricing-tables .no-pad-right {
+  padding-right: 0px !important;
+}
+
+.feature-list strong.price-header {
+    font-size: 26px;
+}
+
+@media (max-width: 1000px) and (min-width: 730px){
+  .feature-list strong.price-header {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 729px) and (min-width: 420px) {
+  .feature-list strong.price-header {
+      font-size: 16px;
+  }
+
+  .pricing-table .features li, .manual-message {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 419px) {
+  .feature-list strong.price-header {
+      font-size: 14px;
+  }
+
+  .pricing-table .features li, .manual-message {
+    font-size: 12px;
+    height: 120px;
+  }
+}
+
+.compare-icon:before {
+  font-size: 40px;
+}
+
+.green-icon {
+  border-color: green !important;
+  color: green !important;
+}
+
+.blue-icon {
+  border-color: blue !important;
+  color: blue !important;
+}
+
+.red-icon {
+  border-color: red !important;
+  color: red !important;
+}
+
+.btn-xl {
+  font-size: 16px;
+}
+.menu li a {
+  padding-top: 10px;
+}
+
+.menu li a.booknow-nav {
+  background: #ca293e;
+  padding: 10px 14px 10px 14px;
+  color: #FFF;
+  border-radius: 20px;
+}
+
+.top-bar.nav-sticky .menu li a.booknow-nav {
+  padding: 10px;
+}
+
+section#booknow {
+  background-color: #222222;
+  background-image: url('../img/map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#booknow .section-heading {
+  color: white;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5ths {
+      width: 20%;
+      float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5ths {
+      width: 20%;
+      float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+      width: 20%;
+      float: left;
+  }
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 0;
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* Portfolio section (Reviews) */
+
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+.portfolio-modal .modal-dialog {
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+
+/* IconMoon custom icons */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lfiv8c');
+  src:  url('../fonts/icomoon.eot?lfiv8c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lfiv8c') format('truetype'),
+    url('../fonts/icomoon.woff?lfiv8c') format('woff'),
+    url('../fonts/icomoon.svg?lfiv8c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="iconmoon-"], [class*=" iconmoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconmoon-biceps:before {
+  content: "\1f323";
+  font-weight: bold;
+  font-size: 60px;
+}
+.iconmoon-abc-blocks:before {
+  content: "\1f322";
+}
+
+.iconmoon-crown-boss:before {
+  content: "\e900";
+}
+.iconmoon-neighborhood:before {
+  content: "\e901";
+}
