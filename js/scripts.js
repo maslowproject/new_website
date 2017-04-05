@@ -157,8 +157,15 @@ $(document).ready(function(){
 		var imgSrc= $(this).children('img').attr('src');
 		$(this).css('background', 'url("' + imgSrc + '")');
     	$(this).children('img').hide();
-        $(this).css('background-position', '50% 0%');
+        $(this).css('background-position', 'top left');
+        $(this).css('background-attachment', 'local');
 	});
+
+	if ($(window).innerWidth() < 768)
+	{
+		$('.header-background').css('background', 'url("img/header_short.jpg")');		
+	}
+
 
 	// Accordion
 
@@ -558,3 +565,17 @@ function onYouTubeIframeAPIReady() {
 	});
 
 }
+var oldWidth = $(window).innerWidth;
+
+$(window).resize(function() {
+	if (this.innerWidth < 768 && oldWidth >= 768)
+	{
+		$('.header-background').css('background', 'url("img/header_short.jpg")');
+	}
+	else if (this.innerWidth >= 768 && oldWidth < 768)
+	{
+		$('.header-background').css('background', 'url("img/header.jpg")');		
+	}
+
+	oldWidth = this.innerWidth;
+})
