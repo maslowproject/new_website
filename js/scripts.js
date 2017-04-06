@@ -161,10 +161,6 @@ $(document).ready(function(){
         $(this).css('background-attachment', 'local');
 	});
 
-	if ($(window).innerWidth() < 768)
-	{
-		$('.header-background').css('background', 'url("img/header_short.jpg")');		
-	}
 
 
 	// Accordion
