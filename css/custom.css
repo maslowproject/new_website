@@ -282,6 +282,10 @@ section h3.section-subheading {
   font-style: normal;
 }
 
+.modal-body p.text-muted i.fa-star {
+  color: #ff3300;
+}
+
 #portfolio * {
   z-index: 2;
 }
