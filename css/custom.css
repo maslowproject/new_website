@@ -1,3 +1,24 @@
+.contained-wrapper.index {
+  background: rgba(255, 255, 255, 0.0);
+}
+
+.index .subnav {
+  background: rgba(255, 255, 255, 0.0);  
+}
+
+.index .social-icons li a {
+  color: #fff;
+}
+
+.index .menu a {
+  color: #fff;
+  padding-bottom: 0px;
+}
+
+.index .has-dropdown:after {
+  color: #fff;
+}
+
 .leftalign {
   text-align: left;
 }
@@ -41,7 +62,7 @@ ul.square {
 }
 
 div.header-background {
-  filter:brightness(40%);
+  filter:brightness(45%);
 }
 
 .feature-box div.overlay {
@@ -129,15 +150,24 @@ h1.corevalue {
 .btn-xl {
   font-size: 16px;
 }
-.menu li a {
+.menu a {
   padding-top: 10px;
 }
 
-.menu li a.booknow-nav {
+.nav-sticky .menu a {
+  color: black;
+}
+
+
+.menu span a {
+  font-size: 18px;
+}
+.menu span a.booknow-nav {
   background: #ff3300;
   padding: 10px 14px 10px 14px;
   color: #FFF;
   border-radius: 20px;
+  font-size: 16px;
 }
 
 .top-bar.nav-sticky .menu li a.booknow-nav {

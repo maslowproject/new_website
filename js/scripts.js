@@ -157,7 +157,7 @@ $(document).ready(function(){
 		var imgSrc= $(this).children('img').attr('src');
 		$(this).css('background', 'url("' + imgSrc + '")');
     	$(this).children('img').hide();
-        $(this).css('background-position', 'top left');
+        $(this).css('background-position', '50% 80%');
         $(this).css('background-attachment', 'local');
 	});
 
