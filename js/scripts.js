@@ -330,8 +330,13 @@ $(document).ready(function(){
 
             jQuery.ajax({
                 type: "POST",
-                url: "mail/mail.php",
-                data: thisForm.serialize(),
+                url: "https://eojg3b0nb4.execute-api.us-east-1.amazonaws.com/prod/SendToTrucke",
+                data: {
+					name: $(".form-name").val(),
+					email: $(".form-email").val(),
+					subject: $(".form-subject").val(),
+					message: $(".form-message").val()
+				},
                 success: function (response) {
                 	// Swiftmailer always sends back a number representing numner of emails sent.
 					// If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
@@ -349,7 +354,7 @@ $(document).ready(function(){
 						// Keep the current error text in a data attribute on the form
 						thisForm.find('.form-error').attr('original-error', thisForm.find('.form-error').text());
 						// Show the error with the returned error text.
-						thisForm.find('.form-error').text(response).fadeIn(1000);
+						thisForm.find('.form-error').text("There's an issue with our server. Please email us directly at contactus@getatrucke.com.").fadeIn(1000);
 						thisForm.find('.form-success').fadeOut(1000);
 					}
                 },
